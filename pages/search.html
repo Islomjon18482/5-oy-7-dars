@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/search.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <a href="../index.html">Main page</a>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    <form>
+
+
+        <div class="find">
+        
+            <select id="type" class="col-3 form-select" aria-label="Default select example">
+                <option value="" selected  disabled>Select phone type</option>
+                <option value="iphone">Iphone</option>
+                <option value="samsung">Samsung</option>
+                <option value="redmi">Redmi</option>
+                <option value="huawei">Huawei</option>
+              </select>
+              <select id="color" class="col-3  form-select" aria-label="Default select example">
+                <option value="" selected disabled>Select phone color</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="gray">Gray</option>
+                <option value="green">Green</option>
+              </select>
+        </div>
+        <div class="find">
+            <input id="min__cost" type="number" placeholder="Enter min cost">
+            <input id="max__cost" type="number" placeholder="Enter max cost">
+        </div>
+        <button id="find">Search</button>
+
+    </form>
+    <div class="container" id="myUL">
+    </div>
+    <script src="../js/search.js"></script>
+</body>
+</html>
